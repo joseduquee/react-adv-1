@@ -11,6 +11,7 @@ interface Route {
 }
 
 
+<<<<<<< HEAD
 const LazyLayout = lazy(() => import(/* webpackChunkName: "LazyLayout" */ '../01-lazyload/layout/LazyLayout'));
 
 
@@ -29,4 +30,22 @@ export const routes: Route[] = [
         name: 'No Lazy'
     },
 
+=======
+const LazyLayout = lazy(() => import(/* webpackChunkName: "lazyLayout" */'../01-lazyload/layout/LazyLayout'));
+
+
+export const routes: Route[] = [
+  {
+    path: "/lazyload/*",
+    to: "/lazyload/",
+    Component: LazyLayout,
+    name: "DashBoard",
+  },
+  {
+    to: "/no-lazy",
+    path: "no-lazy",
+    Component: NoLazy,
+    name: "No Lazy",
+  },
+>>>>>>> 5ec8a50 (Rutas anidadas listas)
 ];
