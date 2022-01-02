@@ -48,6 +48,10 @@ nav li a {
 }
 
 .nav-active {
-  color: grey;
+  color: rgb(9, 189, 221);
   transition: all .3s ease-out;
+}
+
+nav::-webkit-scrollbar {
+  display: none;
 }
