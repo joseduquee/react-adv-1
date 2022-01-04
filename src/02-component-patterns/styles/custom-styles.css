@@ -17,3 +17,9 @@
     color: white;
     border-color: white;
 }
+
+.shopping-car {
+    position: fixed;
+    right: 10px;
+    top: 0px;;
+}
